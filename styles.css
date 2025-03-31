@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,13 +6,26 @@ body {
     background: #121212;
     color: #fff;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
+/* Header */
 header {
     background: #1f1f1f;
     padding: 20px;
 }
 
+.logo img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -25,16 +39,38 @@ nav ul li {
 nav ul li a {
     color: #00c3ff;
     text-decoration: none;
+    font-size: 18px;
 }
 
+/* Sections */
 section {
     padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contact Form */
 form input, form textarea {
-    width: 80%;
+    width: 90%;
+    max-width: 400px;
     padding: 10px;
     margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+textarea {
+    height: 100px;
 }
 
 button {
@@ -43,9 +79,16 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
+button:hover {
+    background: #0094cc;
+}
+
+/* Footer */
 footer {
     background: #1f1f1f;
     padding: 10px;
+    margin-top: 20px;
 }
