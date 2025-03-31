@@ -1,12 +1,33 @@
 /* General Styles */
 body {
+        background-image: url('l.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-color: white;
+    
+    
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #ffffff;
+    background: #ffffff url('l.png') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
     text-align: center;
     scroll-behavior: smooth;
+    position: relative;
+}
+
+/* Overlay Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85); /* Light white overlay */
+    z-index: -1;
 }
 
 /* Header */
@@ -24,16 +45,18 @@ header {
 
 h1 {
     font-size: 24px;
+    margin: 0;
 }
 
 /* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
@@ -41,6 +64,11 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffd699;
 }
 
 /* Sections */
@@ -52,14 +80,21 @@ section {
 
 h2 {
     color: #ff6600;
+    font-size: 28px;
 }
 
-/* Services & Projects */
+/* Services, Projects, and Team Members */
 .service, .project, .team-member {
     background: #f5f5f5;
     padding: 20px;
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover, .project:hover, .team-member:hover {
+    transform: scale(1.05);
 }
 
 /* Contact Form */
@@ -70,10 +105,12 @@ form input, form textarea {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ff6600;
+    box-sizing: border-box;
 }
 
 textarea {
     height: 100px;
+    resize: none;
 }
 
 button {
@@ -83,6 +120,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: background 0.3s ease-in-out;
 }
 
 button:hover {
@@ -94,4 +132,6 @@ footer {
     background: #ff6600;
     color: white;
     padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
 }
