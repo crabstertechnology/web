@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Watering System - Project Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .text-justify { text-align: justify; }
+        h2 { text-align: left; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-orange-600 text-white py-4 text-center">
+        <h1 class="text-3xl font-bold">Automated Watering System for Plants</h1>
+    </header>
+
+    <!-- Project Overview -->
+    <section class="max-w-4xl mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
+        <img src="p.jpg" alt="Automated Watering System" class="w-full object-cover rounded-lg">
+
+        <h2 class="text-2xl font-semibold mt-4 text-orange-600">Abstract</h2>
+        <p class="mt-2 text-gray-700 text-justify">
+            The Automated Watering System is a smart irrigation solution that uses sensors and microcontrollers to monitor soil moisture and water plants automatically. This system conserves water while ensuring optimal plant growth, making it perfect for home gardens and agriculture.
+        </p>
+        
+
+        <!-- Working Principle -->
+        <h2 class="text-2xl font-semibold mt-6 text-orange-600">Working Principle</h2>
+        <p class="mt-2 text-gray-700 text-justify">
+            The system consists of soil moisture sensors, an Arduino Nano microcontroller, and a submersible pump. When the soil moisture drops below a set threshold, the microcontroller activates the pump to water the plants. Once the soil reaches optimal moisture, the system stops watering, ensuring efficient water use.
+        </p>
+
+        <!-- Block Diagram -->
+        <h2 class="text-2xl font-semibold mt-6 text-orange-600">Block Diagram</h2>
+        <div class="w-full h-[500px] overflow-auto border border-gray-300 rounded-lg shadow-md">
+            <iframe src="b.pdf" width="100%" height="100%" class="rounded-lg"></iframe>
+        </div>
+
+        <!-- Circuit Diagram -->
+        <h2 class="text-2xl font-semibold mt-6 text-orange-600">Circuit Diagram</h2>
+        <img src="c.png" alt="Circuit Diagram" class="w-full object-contain rounded-lg bg-gray-200">
+
+        <!-- Hardware Section -->
+        <h2 class="text-2xl font-semibold mt-6 text-orange-600">Hardware Components</h2>
+        <ul class="mt-2 text-gray-700 list-disc pl-6 text-justify">
+            <li><strong>Arduino Nano:</strong> Microcontroller that processes sensor data and controls the pump.</li>
+            <li><strong>Soil Moisture Sensor:</strong> Measures soil water levels and sends data to the Arduino.</li>
+            <li><strong>Submersible Pump:</strong> Delivers water to plants when activated.</li>
+            <li><strong>Power Supply (3.7V, 3000mAh):</strong> Provides energy to the system.</li>
+            <li><strong>Solar Panel:</strong> Captures sunlight and charges the battery.</li>
+            <li><strong>Transistor (TIP31C):</strong> Controls power flow to the pump.</li>
+            <li><strong>Resistor (1kΩ):</strong> Limits current to protect components.</li>
+            <li><strong>Capacitor (25V, 220μF):</strong> Helps smooth out voltage fluctuations.</li>
+        </ul>
+
+        <!-- Software Section -->
+        <h2 class="text-2xl font-semibold mt-6 text-orange-600">Software Used</h2>
+        <ul class="mt-2 text-gray-700 list-disc pl-6 text-justify">
+            <li><strong>Arduino IDE:</strong> Used for writing and uploading code.</li>
+            <li><strong>C/C++ Programming:</strong> Defines pump control and sensor logic.</li>
+            <li><strong>Moisture Level Threshold:</strong> Predefined value that triggers the pump.</li>
+            <li><strong>Pump Control Logic:</strong> Controls when the pump turns on and off.</li>
+        </ul>
+
+        <!-- Advantages -->
+        <h2 class="text-2xl font-semibold mt-6 text-orange-600">Advantages</h2>
+        <ul class="mt-2 text-gray-700 list-disc pl-6 text-justify">
+            <li>Water Conservation</li>
+            <li>Time-Saving & Low Maintenance</li>
+            <li>Energy Efficient</li>
+            <li>Eco-Friendly & Cost-Effective</li>
+        </ul>
+
+        <!-- Applications -->
+        <h2 class="text-2xl font-semibold mt-6 text-orange-600">Applications</h2>
+        <ul class="mt-2 text-gray-700 list-disc pl-6 text-justify">
+            <li>Urban Farming</li>
+            <li>Parks and Landscaping</li>
+            <li>Indoor Plant Care</li>
+            <li>Community Gardens</li>
+        </ul>
+
+        <!-- Cost Estimation -->
+        <h2 class="text-2xl font-semibold mt-6 text-orange-600">Cost Estimation</h2>
+        <p class="mt-2 text-gray-700 text-justify">The estimated cost of the project is <strong>Rs.4999</strong>.</p>
+
+        <!-- Conclusion -->
+        <h2 class="text-2xl font-semibold mt-6 text-orange-600">Conclusion</h2>
+        <p class="mt-2 text-gray-700 text-justify">
+            The Automated Watering System for Plants is an efficient and self-sustaining irrigation solution. By integrating sensors, a microcontroller, and a solar-powered battery, this system ensures plant health while conserving water and minimizing human effort.
+        </p>
+    </section>
+
+
+     <!-- Footer -->
+     <footer class="bg-orange-600 text-white text-center p-4">
+        &copy; 2025 Crabster Technology | All Rights Reserved
+    </footer>
+
+</body>
+</html>

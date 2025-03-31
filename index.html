@@ -53,6 +53,31 @@
                 </div>
             </div>
         </section>
+       <!-- Projects Section -->
+<section id="projects" class="my-12 text-center hidden-section">
+    <h2 class="text-3xl font-bold text-orange-600 mb-6">Our Projects</h2>
+
+    <div class="w-full max-w-3xl mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
+        <img src="p.jpg" 
+        alt="Automated Watering System" 
+        class="w-full h-auto max-h-[4160px] object-cover rounded-lg">
+    
+
+        <div class="mt-4">
+            <h3 class="font-semibold text-lg">Automated Watering System</h3>
+            <p class="text-gray-600 mt-2">
+                A solar-powered automated watering system designed to monitor soil moisture and activate watering automatically.
+            </p>
+
+            <a href="project-details.html" 
+                class="inline-block mt-4 bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition duration-300">
+                Learn More
+            </a>
+        </div>
+    </div>
+</section>
+
+
 
         <!-- Team -->
         <section id="team" class="my-12 text-center hidden-section">
@@ -136,6 +161,49 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const projects = [
+                {
+                    image: "WhatsApp Image 2024-11-08 at 14.21.47_fa11201c.jpg",
+                    title: "Automated Watering System",
+                    description: "A solar-powered automated watering system designed to monitor soil moisture and activate watering automatically.",
+                    link: "project-details.html"
+                },
+                {
+                    image: "another-project.jpg", 
+                    title: "Another Project",
+                    description: "Brief description of another project.",
+                    link: "another-project-details.html"
+                }
+            ];
+    
+            let currentIndex = 0;
+    
+            const projectImage = document.getElementById("project-image");
+            const projectTitle = document.getElementById("project-title");
+            const projectDescription = document.getElementById("project-description");
+            const learnMore = document.getElementById("learn-more");
+    
+            document.getElementById("next-project").addEventListener("click", function () {
+                currentIndex = (currentIndex + 1) % projects.length;
+                updateProject();
+            });
+    
+            document.getElementById("prev-project").addEventListener("click", function () {
+                currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+                updateProject();
+            });
+    
+            function updateProject() {
+                projectImage.src = projects[currentIndex].image;
+                projectTitle.textContent = projects[currentIndex].title;
+                projectDescription.textContent = projects[currentIndex].description;
+                learnMore.href = projects[currentIndex].link;
+            }
+        });
+    </script>
+    
 
 </body>
 </html>
