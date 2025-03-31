@@ -9,8 +9,10 @@
 <body class="bg-white text-gray-900">
 
     <!-- Header -->
-    <header class="bg-orange-600 text-white p-6 flex flex-col items-center">
-        <img src="logo.jpg" alt="Crabster Technology Logo" class="w-32 h-32 rounded-full bg-orange-600">
+    <header class="bg-orange-600 text-white p-6 flex flex-col items-center relative">
+        <div class="w-32 h-32 bg-orange-600 rounded-full flex items-center justify-center overflow-hidden border-4 border-white">
+            <img src="logo.jpg" alt="Crabster Technology Logo" class="w-full h-full object-contain">
+        </div>
         <h1 class="text-3xl font-bold mt-2 text-center">Welcome to Crabster Technology</h1>
         <nav class="mt-4">
             <ul class="flex space-x-6">
@@ -23,75 +25,75 @@
         </nav>
     </header>
 
-    <main class="max-w-4xl mx-auto p-6">
+    <main class="max-w-5xl mx-auto p-6">
         
         <!-- About -->
         <section id="about" class="my-12 text-center">
-            <h2 class="text-2xl font-bold text-orange-600">About Us</h2>
-            <p class="mt-4">Crabster Technology is an innovative startup specializing in AI, IoT, and Space Situational Awareness (SSA). We develop real-time monitoring, predictive analytics, and smart technology solutions.</p>
+            <h2 class="text-3xl font-bold text-orange-600">About Us</h2>
+            <p class="mt-4 text-lg">Crabster Technology is an innovative startup specializing in AI, IoT, and Space Situational Awareness (SSA). We develop real-time monitoring, predictive analytics, and smart technology solutions.</p>
         </section>
 
         <!-- Services -->
         <section id="services" class="my-12 text-center">
-            <h2 class="text-2xl font-bold text-orange-600">Our Services</h2>
-            <div class="grid md:grid-cols-3 gap-6 mt-6">
-                <div class="p-6 bg-gray-100 rounded-lg">
-                    <h3 class="font-semibold">🚀 AI & ML Solutions</h3>
-                    <p>Developing ML models for predictive analytics, healthcare, and automation.</p>
+            <h2 class="text-3xl font-bold text-orange-600">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-6">
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="font-semibold text-lg">🚀 AI & ML Solutions</h3>
+                    <p class="mt-2">Developing ML models for predictive analytics, healthcare, and automation.</p>
                 </div>
-                <div class="p-6 bg-gray-100 rounded-lg">
-                    <h3 class="font-semibold">🔌 IoT Development</h3>
-                    <p>Integrating IoT devices for real-time automation and data processing.</p>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="font-semibold text-lg">🔌 IoT Development</h3>
+                    <p class="mt-2">Integrating IoT devices for real-time automation and data processing.</p>
                 </div>
-                <div class="p-6 bg-gray-100 rounded-lg">
-                    <h3 class="font-semibold">🛰️ Space Technology</h3>
-                    <p>Developing AI-based SSA systems for space debris tracking and collision prediction.</p>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="font-semibold text-lg">🛰️ Space Technology</h3>
+                    <p class="mt-2">Developing AI-based SSA systems for space debris tracking and collision prediction.</p>
                 </div>
             </div>
         </section>
 
         <!-- Projects -->
         <section id="projects" class="my-12 text-center">
-            <h2 class="text-2xl font-bold text-orange-600">Our Projects</h2>
-            <div class="grid md:grid-cols-3 gap-6 mt-6">
-                <div class="p-6 bg-gray-100 rounded-lg">
-                    <h3 class="font-semibold">Predictis</h3>
-                    <p>AI-powered cardiovascular disease risk prediction system.</p>
+            <h2 class="text-3xl font-bold text-orange-600">Our Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-6">
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="font-semibold text-lg">Predictis</h3>
+                    <p class="mt-2">AI-powered cardiovascular disease risk prediction system.</p>
                 </div>
-                <div class="p-6 bg-gray-100 rounded-lg">
-                    <h3 class="font-semibold">SSA System</h3>
-                    <p>Real-time space object tracking & collision prediction using AI.</p>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="font-semibold text-lg">SSA System</h3>
+                    <p class="mt-2">Real-time space object tracking & collision prediction using AI.</p>
                 </div>
-                <div class="p-6 bg-gray-100 rounded-lg">
-                    <h3 class="font-semibold">Smart Traffic Monitoring</h3>
-                    <p>IoT-based vehicle counting system with real-time display.</p>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="font-semibold text-lg">Smart Traffic Monitoring</h3>
+                    <p class="mt-2">IoT-based vehicle counting system with real-time display.</p>
                 </div>
             </div>
         </section>
 
         <!-- Team -->
         <section id="team" class="my-12 text-center">
-            <h2 class="text-2xl font-bold text-orange-600">Our Team</h2>
-            <div class="grid md:grid-cols-2 gap-6 mt-6">
-                <div class="p-6 bg-gray-100 rounded-lg">
-                    <h3 class="font-semibold">Sasitharan</h3>
-                    <p>Founder & AI/IoT Engineer</p>
+            <h2 class="text-3xl font-bold text-orange-600">Our Team</h2>
+            <div class="grid md:grid-cols-2 gap-8 mt-6">
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="font-semibold text-lg">Sasitharan</h3>
+                    <p class="mt-2">Founder & AI/IoT Engineer</p>
                 </div>
-                <div class="p-6 bg-gray-100 rounded-lg">
-                    <h3 class="font-semibold">Sooriya</h3>
-                    <p>Co-Founder & Marketing Lead</p>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="font-semibold text-lg">Sooriya</h3>
+                    <p class="mt-2">Co-Founder & Marketing Lead</p>
                 </div>
             </div>
         </section>
 
         <!-- Contact -->
         <section id="contact" class="my-12 text-center">
-            <h2 class="text-2xl font-bold text-orange-600">Contact Us</h2>
-            <form class="mt-6 max-w-lg mx-auto bg-gray-100 p-6 rounded-lg">
-                <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border border-orange-600 rounded-md" required>
-                <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border border-orange-600 rounded-md" required>
-                <textarea placeholder="Your Message" class="w-full p-3 mb-4 border border-orange-600 rounded-md"></textarea>
-                <button type="submit" class="w-full bg-orange-600 text-white p-3 rounded-md hover:bg-orange-700">Send Message</button>
+            <h2 class="text-3xl font-bold text-orange-600">Contact Us</h2>
+            <form action="https://formsubmit.co/crabstertechnology@gmail.com" method="POST" class="mt-6 max-w-lg mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 border border-orange-600 rounded-md focus:ring-2 focus:ring-orange-500" required>
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 border border-orange-600 rounded-md focus:ring-2 focus:ring-orange-500" required>
+                <textarea name="message" placeholder="Your Message" class="w-full p-3 mb-4 border border-orange-600 rounded-md focus:ring-2 focus:ring-orange-500" required></textarea>
+                <button type="submit" class="w-full bg-orange-600 text-white p-3 rounded-md hover:bg-orange-700 transition duration-300">Send Message</button>
             </form>
         </section>
 
@@ -102,11 +104,5 @@
         <p>&copy; 2025 Crabster Technology. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.querySelector("form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Message sent! We'll get back to you soon.");
-        });
-    </script>
 </body>
 </html>
