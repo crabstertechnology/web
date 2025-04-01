@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #333;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: #ff6600;
+    padding: 20px;
+    color: white;
+}
+
+.logo img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #ff6600;
+}
+
+/* Services & Projects */
+.service, .project, .team-member {
+    background: #f5f5f5;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+form input, form textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ff6600;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #cc5200;
+}
+
+/* Footer */
+footer {
+    background: #ff6600;
+    color: white;
+    padding: 10px;
+}
